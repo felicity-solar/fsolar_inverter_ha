@@ -16,8 +16,13 @@ from dataclasses import dataclass
 from typing import Any, Protocol
 
 from .const import (
-    CONF_HOST, CONF_PORT, CONF_SIMULATOR, CONF_UNIT_ID,
-    DEFAULT_PORT, DEFAULT_UNIT_ID, MODEL,
+    CONF_HOST,
+    CONF_PORT,
+    CONF_SIMULATOR,
+    CONF_UNIT_ID,
+    DEFAULT_PORT,
+    DEFAULT_UNIT_ID,
+    MODEL,
 )
 
 _LOGGER = logging.getLogger(__name__)
