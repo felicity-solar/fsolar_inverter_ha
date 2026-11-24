@@ -1,8 +1,8 @@
 {
   "domain": "fsolar_inverter_ha",
   "name": "FSolar Inverter HA",
-  "codeowners": ["@felicity-solar"],
   "categories": ["energy"],
+  "codeowners": ["@felicity-solar"],
   "config_flow": true,
   "dependencies": [],
   "documentation": "https://github.com/felicity-solar/fsolar_inverter_ha",
