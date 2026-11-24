@@ -1,0 +1,45 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "连接逆变器",
+        "description": "填写 Modbus TCP 地址。勾选「使用内置模拟器」可不接硬件先跑通全流程（此时主机、端口、单元号会被忽略）。",
+        "data": {
+          "host": "主机地址",
+          "port": "端口",
+          "unit_id": "Modbus 单元号",
+          "simulator": "使用内置模拟器"
+        }
+      },
+      "reconfigure": {
+        "title": "重新配置逆变器连接",
+        "description": "修改 Modbus TCP 地址、端口或单元号，或在「内置模拟器」与真实设备之间切换。",
+        "data": {
+          "host": "主机地址",
+          "port": "端口",
+          "unit_id": "Modbus 单元号",
+          "simulator": "使用内置模拟器"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "连不上逆变器，请检查地址与网络",
+      "invalid_auth": "认证失败",
+      "unknown": "发生未知错误"
+    },
+    "abort": {
+      "already_configured": "这台逆变器已经添加过了",
+      "updated_entry": "连接参数已更新，集成已自动重载"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "逆变器选项",
+        "data": {
+          "scan_interval": "轮询间隔（秒）"
+        }
+      }
+    }
+  }
+}

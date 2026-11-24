@@ -1,0 +1,45 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect an inverter",
+        "description": "Enter the Modbus TCP address. Tick the simulator to try the integration without hardware (host, port and unit ID are then ignored).",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "unit_id": "Modbus unit ID",
+          "simulator": "Use built-in simulator"
+        }
+      },
+      "reconfigure": {
+        "title": "Reconfigure the inverter connection",
+        "description": "Change the Modbus TCP address, port or unit ID, or switch between the built-in simulator and a real device.",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "unit_id": "Modbus unit ID",
+          "simulator": "Use built-in simulator"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not reach the inverter",
+      "invalid_auth": "Authentication failed",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This inverter is already configured",
+      "updated_entry": "The connection was updated and the integration reloaded"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "PV inverter options",
+        "data": {
+          "scan_interval": "Poll interval in seconds"
+        }
+      }
+    }
+  }
+}
